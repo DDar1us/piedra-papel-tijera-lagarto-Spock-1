@@ -26,7 +26,7 @@ public class Mano {
 	 * @return un Resultado, de acuerdo al estado del juego.
 	 */
 	public Resultado jugarCon(final Mano otra) {
-		if (this.forma==otra.forma){
+		if (this.forma==otra.forma) {
 			return Resultado.EMPATA;
 		}
 		if (this.forma==Forma.PIEDRA&&otra.forma==Forma.TIJERA||this.forma==Forma.PAPEL&&otra.forma==Forma.PIEDRA||this.forma==Forma.TIJERA&&otra.forma==Forma.PAPEL||this.forma==Forma.LAGARTO&&otra.forma==Forma.SPOCK||this.forma==Forma.SPOCK&&otra.forma==Forma.TIJERA||this.forma==Forma.TIJERA&&otra.forma==Forma.LAGARTO||this.forma==Forma.LAGARTO&&otra.forma==Forma.PAPEL||this.forma==Forma.PAPEL&&otra.forma==Forma.SPOCK||this.forma==Forma.SPOCK&&otra.forma==Forma.PIEDRA||this.forma==Forma.PIEDRA&&otra.forma==Forma.LAGARTO)
